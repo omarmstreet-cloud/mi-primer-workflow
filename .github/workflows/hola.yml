@@ -2,12 +2,12 @@ name: Mi primer workflow
 
 on:
   push:
-      branches:
-            - main
+    branches:
+      - main
 
-            jobs:
-              saludar:
-                  runs-on: ubuntu-latest
-                      steps:
-                            - name: Mostrar mensaje
-                                    run: echo "¡El workflow funcionó! Bienvenido a GitHub Actions, Omar."
+jobs:
+  saludar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mostrar mensaje
+        run: echo "El workflow funciono! Bienvenido a GitHub Actions, Omar."
